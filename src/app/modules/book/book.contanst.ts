@@ -1,0 +1,1 @@
+export const BookSearchAbleFilters = ['title','author','genre']
