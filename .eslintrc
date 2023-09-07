@@ -5,26 +5,26 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
+  // HERE
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+
   "rules": {
-    "no-unused-vars": "error",
-    "prefer-const": "error",
-    "no-unused-expressions": "error",
-    "no-undef": "error",
-    "no-console": "off",
-    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+      "no-unused-vars": "error",
+      "no-console" : "warn",
+      "no-undef" : "error",
+      "no-unused-expressions" : "error",
+      "no-redeclare" : "error",
+      "@typescript-eslint/consistent-type-definitions" : ["error", "type"],
+      "identifierToKeywordKind(identifier)": "warn",
+      "originalKeywordKind" : "warn"
+
   },
   "env": {
-    "browser": true,
-    "es2021": true,
-    "node":true
-  },
-  "globals": {
-    "process":"readonly"
-  }
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "globals": {
+      "process" : "readonly"
+    }
 }
