@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const edge_1 = require("@prisma/client/edge");
-const prisma = new edge_1.PrismaClient({
+const client_1 = require("@prisma/client");
+const prisma = new client_1.PrismaClient({
     errorFormat: 'minimal',
 });
 exports.default = prisma;
